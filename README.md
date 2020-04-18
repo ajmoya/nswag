@@ -8,7 +8,8 @@ Requisitos previos:
 
 + VS 2019
 + API .NET Core 3.1
-
++ Package NSwag.AspNetCore => para la generación de documentación de APIs
++ Package NSwag.MSBuild => para la autogeneración de clientes de APIs
 
 Pruebas de concepto:
 --
