@@ -12,7 +12,7 @@ Requisitos previos:
 
 Pruebas de concepto:
 --
-La API Rest consta de dos controllers: <i>WeatherForecastController</i> y <i>OtroLimitadoController</i>. Se quiere gestionar su documentación mediante el estándar OpenAPI, con los siguiente condicionantes:
+La API REST consta de dos controllers: <i>WeatherForecastController</i> y <i>OtroLimitadoController</i>. Se quiere gestionar su documentación mediante el estándar OpenAPI, con los siguiente condicionantes:
 
 + El generador OpenAPIDocument debe crear dos documentos diferentes: <i>doc</i> y <i>read</i>, cada uno accesibles mediante path distintas
 + La especificación del documento <i>doc</i> debe ser accesible a través del path <b>urlBase/doc/openapi.json</b>
