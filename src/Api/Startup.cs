@@ -55,18 +55,23 @@ namespace Api
 
             app.UseRouting();
 
-            
+
             // Registramos el middleware del generador OpenAPI 3.0
-            app.UseOpenApi(options =>
-            {
-                options.DocumentName = "doc";
-                options.Path = "/doc/openapi.json";
-            });
-            app.UseOpenApi(options =>
-            {
-                options.DocumentName = "read";
-                options.Path = "/read/openapi.json";
-            });
+            //app.UseOpenApi(options =>
+            //{
+            //    options.DocumentName = "doc";
+            //    options.Path = "/doc/openapi.json";
+            //});
+            //app.UseOpenApi(options =>
+            //{
+            //    options.DocumentName = "read";
+            //    options.Path = "/read/openapi.json";
+            //});
+
+            // Registramos el middleware del generador OpenAPI 3.0
+            // Forma simplificada que hace lo mismo que las dos anteriores llamadas al middleware
+            app.UseOpenApi(options => options.Path = "/{documentName}/openapi.json");
+
 
             // Registramos el middleware de la UI Swagger/OpenAPI 3.0
             app.UseSwaggerUi3(options =>
