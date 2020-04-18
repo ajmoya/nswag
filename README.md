@@ -18,6 +18,8 @@ La API REST consta de dos controllers: <i>WeatherForecastController</i> y <i>Otr
 + El generador OpenAPIDocument debe crear dos documentos diferentes: <i>doc</i> y <i>read</i>, cada uno accesibles mediante path distintas
 + La especificación del documento <i>doc</i> debe ser accesible a través del path <b>urlBase/doc/openapi.json</b>
 + La especificación del documento <i>read</i> debe ser accesible a través del path <b>urlBase/read/openapi.json</b>
++ La UI de Swagger también debe generar dos endpoints diferentes: <b><i>urlBase/doc</i></b> y <b><i>urlBase/read</i></b>
+  
 + El documento <i>read</i> no debe mostrar los endpoints del controller <i>OtroLimitadoController</i>
 + Se debe generar de manera automática (cada vez que se recompile la API) dos clientes para el documento <i>doc</i>:
   + Cliente para C#
